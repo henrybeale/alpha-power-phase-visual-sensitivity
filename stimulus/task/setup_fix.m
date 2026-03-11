@@ -1,0 +1,9 @@
+% create the line coordinates to draw the fixation cross
+
+fix_lines = [w.x.mid - s.fix.size, w.x.mid + s.fix.size, w.x.mid, w.x.mid; ...
+             w.y.mid, w.y.mid, w.y.mid - s.fix.size, w.y.mid + s.fix.size];
+
+% fix_lines = [w.x.mid, w.x.mid, w.x.mid, w.x.mid; ... 
+%              w.y.mid, w.y.mid, w.y.mid, w.y.mid];
+% fix_lines = fix_lines + [-s.fix.size, s.fix.size, 0, 0; ...
+%                          0, 0, -s.fix.size, s.fix.size];
